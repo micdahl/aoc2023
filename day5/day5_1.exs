@@ -1,6 +1,6 @@
 defmodule AOC do
   def call do
-    input = File.read!(System.argv() |> List.first())
+    input = File.read!(hd(System.argv()))
 
     [seed_str | maps] =
       String.split(input, "\n\n", trim: true)
